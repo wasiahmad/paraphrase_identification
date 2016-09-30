@@ -38,17 +38,6 @@ They introduced dynamic pooling approach which generates fixed sized similarity 
 
 [Code](https://github.com/jeremysalwen/ParaphraseAutoencoder-octave)
 
-*** Code Bibliography***
-```
-@incollection{SocherEtAl2011:PoolRAE,
-   title = {{Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection}},
-   author = {Richard Socher and Eric H. Huang and Jeffrey Pennington and Andrew Y. Ng and Christopher D. Manning},
-   booktitle = {{Advances in Neural Information Processing Systems 24}},
-   year = {2011}
-  }
-  
-```
-
 ***Bibliography***
 ````
 @incollection{SocherEtAl2011:PoolRAE,

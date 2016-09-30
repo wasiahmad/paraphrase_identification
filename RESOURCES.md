@@ -26,7 +26,7 @@ For SVM, they have used the implementation of the **Sequential Minimal Optimizat
 
 #### [Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection](http://papers.nips.cc/paper/4204-dynamic-pooling-and-unfolding-recursive-autoencoders-for-paraphrase-detection.pdf)
 
-
+I am currently reading this. I will update the summary shortly.
 
 #### [Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks](http://aclweb.org/anthology/D/D15/D15-1181.pdf)
 

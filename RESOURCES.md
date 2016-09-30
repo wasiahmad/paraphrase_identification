@@ -36,13 +36,9 @@ For SVM, they have used the implementation of the **Sequential Minimal Optimizat
 They introduced dynamic pooling approach which generates fixed sized similarity matrix between words and non-terminals from variable sized matrix. They used the similarity matrix along with 3 additional features for classifying paraphrases. Those additional features are, The ﬁrst is 1 if two sentences contain exactly the same numbers or no number and 0 otherwise, the second is 1 if both sentences contain the same numbers and the third is 1 if the set of numbers in one sentence is a strict subset of the numbers in the other sentence. 
 <p align="justify">
 
-***Experimental Dataset & Result***: They used  [MSRP Dataset describe inD Dolan et. al.](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/para_coling2004.pdf) and their accuracy is 76.8% in terms of accuracy. 
+**Experimental Dataset & Result**: They used [MSRP Dataset describe inD Dolan et. al.](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/para_coling2004.pdf) and their accuracy is 76.8% in terms of accuracy. 
 
-***More Details on this work: *** 
-
-[Blog Link](http://www.socher.org/index.php/Main/DynamicPoolingAndUnfoldingRecursiveAutoencodersForParaphraseDetection)
-
-[Code](https://github.com/jeremysalwen/ParaphraseAutoencoder-octave)
+**More Details on this work**: [Blog Link](http://www.socher.org/index.php/Main/DynamicPoolingAndUnfoldingRecursiveAutoencodersForParaphraseDetection), [Code](https://github.com/jeremysalwen/ParaphraseAutoencoder-octave)
 
 **Bibliography**
 ````
@@ -53,8 +49,6 @@ booktitle = {{Advances in Neural Information Processing Systems 24}},
 year = {2011}
 }
 ````
-
-
 
 
 #### [Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks](http://aclweb.org/anthology/D/D15/D15-1181.pdf)

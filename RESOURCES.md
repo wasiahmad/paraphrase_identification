@@ -43,10 +43,10 @@ They introduced dynamic pooling approach which generates fixed sized similarity 
 **Bibliography**
 ````
 @incollection{SocherEtAl2011:PoolRAE,
-title = {{Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection}},
-author = {{Richard Socher and Eric H. Huang and Jeffrey Pennington and Andrew Y. Ng and Christopher D. Manning}},
-booktitle = {{Advances in Neural Information Processing Systems 24}},
-year = {2011}
+  title = {{Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection}},
+  author = {{Richard Socher and Eric H. Huang and Jeffrey Pennington and Andrew Y. Ng and Christopher D. Manning}},
+  booktitle = {{Advances in Neural Information Processing Systems 24}},
+  year = {2011}
 }
 ````
 

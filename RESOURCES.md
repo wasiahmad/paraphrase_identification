@@ -26,7 +26,37 @@ For SVM, they have used the implementation of the **Sequential Minimal Optimizat
 
 #### [Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection](http://papers.nips.cc/paper/4204-dynamic-pooling-and-unfolding-recursive-autoencoders-for-paraphrase-detection.pdf)
 
-I am currently reading this. I will update the summary shortly.
+This paper leveraged and extended the method described in Recursive Autoencoder describen in [Socher et. al (EMNLP.11 )](http://dl.acm.org/citation.cfm?id=2145450). Prior feeding data to RAE, they build binary parse tree from test corpus. Recursive autoencoder is a recursive neural network, which recursively learns representation of words as well as other non terminals in the parse tree. They extended RAE as Unfolding RAE, which decodes the non-terminal down to the terminal level.
+
+They introduced dynamic pooling approach which generates fixed sized similarity matrix between words and non-terminals from variable sized matrix. They used the similarity matrix along with 3 additional features for classifying paraphrases. Those additional features are, The ﬁrst is 1 if two sentences contain exactly the same numbers or no number and 0 otherwise, the second is 1 if both sentences contain the same numbers and the third is 1 if the set of numbers in one sentence is a strict subset of the numbers in the other sentence. 
+
+*** Experimental Dataset & Result***: They used  [MSRP Dataset describe inD Dolan et. al.](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/para_coling2004.pdf) and their accuracy is 76.8% in terms of accuracy. 
+
+*** More Details on this work: *** [Blog Link](http://www.socher.org/index.php/Main/DynamicPoolingAndUnfoldingRecursiveAutoencodersForParaphraseDetection)
+[Code](https://github.com/jeremysalwen/ParaphraseAutoencoder-octave)
+*** Code Bibliography***
+```
+@incollection{SocherEtAl2011:PoolRAE,
+   title = {{Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection}},
+   author = {Richard Socher and Eric H. Huang and Jeffrey Pennington and Andrew Y. Ng and Christopher D. Manning},
+   booktitle = {{Advances in Neural Information Processing Systems 24}},
+   year = {2011}
+  }
+  
+```
+
+***Bibliography***
+````
+@incollection{SocherEtAl2011:PoolRAE,
+title = {{Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection}},
+author = {{Richard Socher and Eric H. Huang and Jeffrey Pennington and Andrew Y. Ng and Christopher D. Manning}},
+booktitle = {{Advances in Neural Information Processing Systems 24}},
+year = {2011}
+}
+````
+*
+
+
 
 #### [Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks](http://aclweb.org/anthology/D/D15/D15-1181.pdf)
 

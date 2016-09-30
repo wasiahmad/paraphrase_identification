@@ -30,7 +30,7 @@ For SVM, they have used the implementation of the **Sequential Minimal Optimizat
 
 #### [Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection](http://papers.nips.cc/paper/4204-dynamic-pooling-and-unfolding-recursive-autoencoders-for-paraphrase-detection.pdf)
 <p align="justify">
-This paper leveraged and extended the method described in Recursive Autoencoder describen in [Socher et. al (EMNLP.11)](http://dl.acm.org/citation.cfm?id=2145450). Prior feeding data to RAE, they build binary parse tree from test corpus. Recursive autoencoder is a recursive neural network, which recursively learns representation of words as well as other non terminals in the parse tree. They extended RAE as Unfolding RAE, which decodes the non-terminal down to the terminal level.
+**Essence**: This paper leveraged and extended the method described in Recursive Autoencoder describen in [Socher et. al (EMNLP.11)](http://dl.acm.org/citation.cfm?id=2145450). Prior feeding data to RAE, they build binary parse tree from test corpus. Recursive autoencoder is a recursive neural network, which recursively learns representation of words as well as other non terminals in the parse tree. They extended RAE as Unfolding RAE, which decodes the non-terminal down to the terminal level.
 <p align="justify">
 <p align="justify">
 They introduced dynamic pooling approach which generates fixed sized similarity matrix between words and non-terminals from variable sized matrix. They used the similarity matrix along with 3 additional features for classifying paraphrases. Those additional features are, The ﬁrst is 1 if two sentences contain exactly the same numbers or no number and 0 otherwise, the second is 1 if both sentences contain the same numbers and the third is 1 if the set of numbers in one sentence is a strict subset of the numbers in the other sentence. 
@@ -44,7 +44,7 @@ They introduced dynamic pooling approach which generates fixed sized similarity 
 
 [Code](https://github.com/jeremysalwen/ParaphraseAutoencoder-octave)
 
-***Bibliography***
+**Bibliography**
 ````
 @incollection{SocherEtAl2011:PoolRAE,
 title = {{Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection}},
@@ -63,9 +63,11 @@ year = {2011}
 
 #### [Corpus-based and Knowledge-based Measures of Text Semantic Similarity](http://www.aaai.org/Papers/AAAI/2006/AAAI06-123.pdf)
 
+**Essence**: This paper demonstrates 
+
 **Expermental Dataset**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus).
 
-***Bibliography***
+**Bibliography**
 ```
 @inproceedings{mihalcea2006corpus,
   title={Corpus-based and knowledge-based measures of text semantic similarity},

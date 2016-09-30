@@ -63,7 +63,9 @@ year = {2011}
 
 #### [Corpus-based and Knowledge-based Measures of Text Semantic Similarity](http://www.aaai.org/Papers/AAAI/2006/AAAI06-123.pdf)
 
-**Essence**: This paper demonstrates 
+<p align="justify">
+**Essence**: This paper demonstrates the effectiveness of two corpus-based and six knowledge-based measures for text semantic similarity. Main idea to measure semantic similarity of texts by exploiting the information that can be drawn from the similarity of the component words. Two corpus-based measures are [Pointwise Mutual Information](https://en.wikipedia.org/wiki/Pointwise_mutual_information) and [Latent Semantic Analysis](https://en.wikipedia.org/wiki/Latent_semantic_analysis). Six knowledge-based measures are [Leacock & Chodorow] similarity, [Lesk](http://dl.acm.org/citation.cfm?id=318728) similarity, [Wu and Palmer](http://dl.acm.org/citation.cfm?id=981751) similarity, [Resnik](https://arxiv.org/abs/cmp-lg/9511007) similarity, [Lin](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.55.1832&rep=rep1&type=pdf) similarity and [Jiang & Conrath](https://arxiv.org/abs/cmp-lg/9709008) similarity.
+<p align="justify">
 
 **Expermental Dataset**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus).
 

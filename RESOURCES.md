@@ -5,11 +5,15 @@
 
 #### [Support Vector Machines for Paraphrase Identification and Corpus Construction](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/I05-50015B15D.pdf)
 
+<p align="justify">
 **Essence**: This paper describes the extraction of parallel corpora from clustered news articles using annotated seed corpora and an SVM classifier, demonstrating that large parallel corpora can be induced by a classifier that includes morphological and synonymy features derived from both statis and dynamic resources.
-
+<p align="justify">
+<p align="justify">
 This work actually refines the output of the second heuristic proposed by [Dolan, et al. (2004)](http://www.aclweb.org/anthology/C04-1051.pdf) which assumes that the early sentences of a news article will tend to summarize the whole article and are thus likely to contain the same information as other early sentences of other articles in the cluster. This heuristic is a text-feature-based heuristic in which the first two sentences of each article in a cluster are cross-matched with each other to find out paraphrasing sentences.
-
+<p align="justify">
+<p align="justify">
 For SVM, they have used the implementation of the **Sequential Minimal Optimization (SMO)** algorithm described in [Platt (1999)](http://www.cs.utsa.edu/~bylander/cs6243/smo-book.pdf). SMO offers the benefit of relatively short training times over very large feature sets, and in particular, appears well suited to handling the sparse features encountered in natural language classification tasks.
+<p align="justify">
 
 **Expermental Dataset**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus).
 
@@ -25,10 +29,12 @@ For SVM, they have used the implementation of the **Sequential Minimal Optimizat
 ```
 
 #### [Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection](http://papers.nips.cc/paper/4204-dynamic-pooling-and-unfolding-recursive-autoencoders-for-paraphrase-detection.pdf)
-
+<p align="justify">
 This paper leveraged and extended the method described in Recursive Autoencoder describen in [Socher et. al (EMNLP.11 )](http://dl.acm.org/citation.cfm?id=2145450). Prior feeding data to RAE, they build binary parse tree from test corpus. Recursive autoencoder is a recursive neural network, which recursively learns representation of words as well as other non terminals in the parse tree. They extended RAE as Unfolding RAE, which decodes the non-terminal down to the terminal level.
-
+<p align="justify">
+<p align="justify">
 They introduced dynamic pooling approach which generates fixed sized similarity matrix between words and non-terminals from variable sized matrix. They used the similarity matrix along with 3 additional features for classifying paraphrases. Those additional features are, The ﬁrst is 1 if two sentences contain exactly the same numbers or no number and 0 otherwise, the second is 1 if both sentences contain the same numbers and the third is 1 if the set of numbers in one sentence is a strict subset of the numbers in the other sentence. 
+<p align="justify">
 
 *** Experimental Dataset & Result***: They used  [MSRP Dataset describe inD Dolan et. al.](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/para_coling2004.pdf) and their accuracy is 76.8% in terms of accuracy. 
 

@@ -83,6 +83,9 @@ I am reading this paper and update with summary shortly.
 <p align="justify">
 They explored eight most sophisticated MT metrics of the last few years that claim to go beyond simple n-gram overlap and edit distance. The metrices are [BLEU](http://www.aclweb.org/anthology/P02-1040.pdf), [NIST](http://dl.acm.org/citation.cfm?id=1289273), [TER](https://www.cs.umd.edu/~snover/pub/amta06/ter_amta.pdf), [TERp](http://link.springer.com/article/10.1007/s10590-009-9062-9), [METEOR](http://www.cs.cmu.edu/~alavie/papers/meteor-naacl2010.pdf), [SEPIA](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.219.4894&rep=rep1&type=pdf), [BADGER](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.219.6503&rep=rep1&type=pdf) and [MAXSIM](https://www.comp.nus.edu.sg/~nght/pubs/acl08.pdf). They have identified TERp, METEOR, BADGER and SEPIA as the best four metrices and also given good examples to demonstrate their effectiveness.
 <p align="justify">
+<p align="justify">
+They have done rigorous error analysis and presented top 5 & 3 sources of errors in the MSRP and MT-Metrics-Paraphrase corpus respectively. They suggested few improvements through incorporating world knowledge, anophora resolution system or giving more weights on the differences in proper names and their variants.
+<p align="justify">
 
 **Expermental Dataset & Result**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus) and [MT-Metrics-Paraphrase-Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MT-Metrics-Paraphrase-Corpus). Accuracy is 77.4% and F1 score is 84.1%.
 

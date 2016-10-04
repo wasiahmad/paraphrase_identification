@@ -82,7 +82,7 @@ I am reading this paper and update with summary shortly.
 #### [Discriminative Improvements to Distributional Sentence Similarity](http://www.aclweb.org/anthology/D/D13/D13-1090.pdf)
 
 <p align="justify">
-**Essence**: 
+**Essence**: The main contribution of this work is proposing a new term-weighting metric called TF-KLD which includes term frequency and KL-divergence. TF-KLD measures the discriminability of a feature and the newly reweighted feature-context matrix factorization yields better semantic relatedness between a pair of paraphrased sentences. Moreover, they have converted latent representation of a pair of sentences into a sample vector by concatenating the element-wise sum and absolute difference of vector representations. This representation is further used in supervised classification of sentence paraphrasing. They have experimented from two perspectives, namely, similarity-based classification and supervised classification. For similarity-based classification, they have used TF-KLD weighting with SVD (Singular Value Decomposition) and NMF (Non-negative Matrix Factorization) and found that NMF is performing slightly better than SVD. For supervised classification, they have used Support Vector Machines. For all of the experiments, they have used two different distribution feature sets. First one included only unigrams while the second one also includes bigrams and unlabeled dependency pairs obtained from [MaltParser](http://stp.lingfil.uu.se/~nivre/docs/nivre_hall_2005.pdf).
 <p align="justify">
 
 **Expermental Dataset**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus).

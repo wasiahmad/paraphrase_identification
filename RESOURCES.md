@@ -77,7 +77,26 @@ I am reading this paper and update with summary shortly.
 
 #### [Re-examining Machine Translation Metrics for Paraphrase Identification](http://www.aclweb.org/anthology/N12-1019.pdf)
 
+<p align="justify">
+**Essence**: The goal of this paper was to determine whether approaches developed for the related but different task of Machine Translation (MT) evaluation can be as competitive as approaches developed specifically for the task of paraphrase identification. It is reported that a meta-classifier trained using only MT metrics outperforms all previous approaches for the MSRP corpus. They used a simple meta-classifier that uses the average of the unweighted probability estimates from the constituent classifiers to make its final decision. They used three constituent classifiers: Logistic regression, the SMO implementation of a support vector machine and a lazy, instance-based classifier that extends the nearest neighbor algorithm.
+<p align="justify">
+<p align="justify">
+They explored eight most sophisticated MT metrics of the last few years that claim to go beyond simple n-gram overlap and edit distance. The metrices are [BLEU](http://www.aclweb.org/anthology/P02-1040.pdf), [NIST](http://dl.acm.org/citation.cfm?id=1289273), [TER](https://www.cs.umd.edu/~snover/pub/amta06/ter_amta.pdf), [TERp](http://link.springer.com/article/10.1007/s10590-009-9062-9), [METEOR](http://www.cs.cmu.edu/~alavie/papers/meteor-naacl2010.pdf), [SEPIA](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.219.4894&rep=rep1&type=pdf), [BADGER](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.219.6503&rep=rep1&type=pdf) and [MAXSIM](https://www.comp.nus.edu.sg/~nght/pubs/acl08.pdf). They have identified TERp, METEOR, BADGER and SEPIA as the best four metrices and also given good examples to demonstrate their effectiveness.
+<p align="justify">
 
+**Expermental Dataset & Result**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus) and [MT-Metrics-Paraphrase-Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MT-Metrics-Paraphrase-Corpus). Accuracy is 77.4% and F1 score is 84.1%.
+
+**Bibliography**
+```
+@inproceedings{madnani2012re,
+  title={Re-examining machine translation metrics for paraphrase identification},
+  author={Madnani, Nitin and Tetreault, Joel and Chodorow, Martin},
+  booktitle={Proceedings of the 2012 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  pages={182--190},
+  year={2012},
+  organization={Association for Computational Linguistics}
+}
+```
 
 #### [Discriminative Improvements to Distributional Sentence Similarity](http://www.aclweb.org/anthology/D/D13/D13-1090.pdf)
 

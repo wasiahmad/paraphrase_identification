@@ -12,3 +12,7 @@
   
   
 3. [MSRVID data](https://www.cs.york.ac.uk/semeval-2012/task6/data/uploads/datasets/) 
+
+4. **Image Anootation**
+      a. [Pascal Dataset](http://nlp.cs.illinois.edu/HockenmaierGroup/pascal-sentences/index.html)
+      b. [Flicker Dataset](http://nlp.cs.illinois.edu/HockenmaierGroup/8k-pictures.html)

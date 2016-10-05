@@ -150,7 +150,7 @@ They have experimented from two perspectives, namely, similarity-based classific
 #### [Using Dependency-Based Features to Take the “Para-farce” out of Paraphrase](http://www.alta.asn.au/events/altw2006/proceedings/swan-final.pdf)
 
 <p align="justify">
-**Essence**: 
+**Essence**: This work investigates whether features based on syntactic dependencies can aid in paraphrase identification. This work proposes a machine learning approach based on syntactic dependency information to filter out false paraphrases. This work explored **17** different features of **3** kinds, namely, **N-gram Overlap**, **Dependency Relation Overlap** and **Dependency Tree-Edit Distance**.
 <p align="justify">
 
 **Expermental Dataset & Result**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus). Accuracy is 75.6% and F1 score is 83%. 

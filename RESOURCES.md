@@ -180,10 +180,13 @@ They have experimented from two perspectives, namely, similarity-based classific
 #### [Paraphrase recognition via dissimilarity significance classification](https://www.comp.nus.edu.sg/~kanmy/papers/paraphrase_emnlp2006.pdf)
 
 <p align="justify">
-**Essence**: 
+**Essence**: This work proposes a two-phase framework emphasizing dissimilarity classification between a pair of sentence. In the first phase, they pair up tuples (<predicate, argument>) in a greedy manner. In the second phase, a dissimilarity classification module uses the lexical head of the predicates and the tuples' path of attachment as features to decide whether such tuples are barriers to paraphrase.
+<p align="justify">
+<p align="justify">
+They key idea is, for a pair of sentences to be a paraphrase, they must possess two attributes. (1) They share a substantial amount of information nuggets and (2) If extra information in the sentences exists, the effect of its removal is not significant.
 <p align="justify">
 
-**Expermental Dataset & Result**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus). Accuracy is 72.0% and F1 score is 81.6%. 
+**Expermental Dataset & Result**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus) and [PASCAL Recognizing Textual Entailment (RTE) Challenge Corpus](https://tac.nist.gov//2011/RTE/index.html). Accuracy is 72.0% and F1 score is 81.6%. 
 
 **Bibliography**
 ```

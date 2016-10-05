@@ -33,6 +33,14 @@
   </p>
 4. **Image Annotation** 
     <ul>
-      <li> <a href = "http://nlp.cs.illinois.edu/HockenmaierGroup/pascal-sentences/index.html"> Pascal Dataset </a> </li>
-      <li> <a href = "http://nlp.cs.illinois.edu/HockenmaierGroup/8k-pictures.html">Flicker Dataset </a> </li>
+      <li> 
+		<a href = "http://nlp.cs.illinois.edu/HockenmaierGroup/pascal-sentences/index.html"> Pascal Dataset </a> 
+		1000 Images with 5 different sentences describing the corresponding image. <br/>
+		
+	  </li>
+      <li> 
+		<a href = "http://nlp.cs.illinois.edu/HockenmaierGroup/8k-pictures.html">Flicker Dataset </a> 
+		 7678 Images from Flicker with 5 different sentences describing the corresponding image. <br/>
+	  </li>
     </ul>
+	<blockquote>Cyrus Rashtchian, Peter Young, Micah Hodosh, and Julia Hockenmaier. Collecting Image Annotations Using Amazon's Mechanical Turk. In Proceedings of the NAACL HLT 2010 Workshop on Creating Speech and Language Data with Amazon's Mechanical Turk.</blockquote>

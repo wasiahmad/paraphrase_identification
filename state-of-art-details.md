@@ -62,7 +62,33 @@ They introduced dynamic pooling approach which generates fixed sized similarity 
 
 #### [Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks](http://aclweb.org/anthology/D/D15/D15-1181.pdf)
 
-I am reading this paper and update with summary shortly. 
+<p align="justify">
+**Essence**: In this work, they claim that their algorithm will do better with low amount of data, as it investigates intrnsic featured in different granularity. But they did not provide any evidential proof.
+
+They used convolutional-neural-networks to obtail sentence embeddings. They used convolutional-neural-networks in multiple granularity. Every word in a sentence is represented in a word embedding vector. They used convolution on both whole word embedding and every dimension of the embedding. Based on that, they grouped convolutions into 2 groups. GroupA for whole word embedding and GroupB for per-dimension convolution. They used 3 types of pooling function (i.e. Max, Min. Mean) for group1 and 2 types(Max, Min) for GroupB. Although, they used identical convolutionNN  for eath of the pooling, but they maintained different NN instead. They also incorporated multiple window sizes for different filters including W_s(window size) to be infinite (which, infact, considers the whole sentence). On top of the pooling layer, they have a similarity measurement layer which uses a specific similarity measurement of 2 sentence representation and passes it to a fully connected softmax layer. 
+
+They used 3 datasets, i.e. *1. MSRP dataset (5801 pair labelled as binary, 1/0 paraphrase or not); 2. SICK dataset(9927 pair with a score from [1,5] denoting the relatdness); 3. MSRVID dataset (1500 pair with a score from [0,5] denoting the relatdness). 
+
+For MSRP, they used hinge loss function as trainning and for other 2, they used Regularized KL-divergence loss. 
+
+***Result:*** 
+
+* MSRP -> Accuracy 78.60%; F1 score 84.73%
+* SICK -> **r=0.8686**; p=0.8047; MSE=0.2606 
+* MSRVID -> **r=0.9090**
+
+<p align="justify">
+
+**Bibliography**
+```
+@inproceedings{he2015multi,
+  title={Multi-perspective sentence similarity modeling with convolutional neural networks},
+  author={He, Hua and Gimpel, Kevin and Lin, Jimmy},
+  booktitle={Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing},
+  pages={1576--1586},
+  year={2015}
+}
+```
 
 #### [Corpus-based and Knowledge-based Measures of Text Semantic Similarity](http://www.aaai.org/Papers/AAAI/2006/AAAI06-123.pdf)
 

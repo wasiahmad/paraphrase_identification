@@ -122,13 +122,77 @@ They have experimented from two perspectives, namely, similarity-based classific
 
 #### [Syntax-Aware Multi-Sense Word Embeddings for Deep Compositional Models of Meaning](http://www.aclweb.org/anthology/D/D15/D15-1177.pdf)
 
+<p align="justify">
+**Essence**: 
+<p align="justify">
+
+**Expermental Dataset & Result**:
+
+**Bibliography**
+```
+@article{cheng2015syntax,
+  title={Syntax-aware multi-sense word embeddings for deep compositional models of meaning},
+  author={Cheng, Jianpeng and Kartsaklis, Dimitri},
+  journal={arXiv preprint arXiv:1508.02354},
+  year={2015}
+}
+```
 
 #### [Using Dependency-Based Features to Take the “Para-farce” out of Paraphrase](http://www.alta.asn.au/events/altw2006/proceedings/swan-final.pdf)
 
+<p align="justify">
+**Essence**: 
+<p align="justify">
+
+**Expermental Dataset & Result**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus). Accuracy is 75.6% and F1 score is 83%. 
+
+**Bibliography**
+```
+@inproceedings{wan2006using,
+  title={Using dependency-based features to take the “para-farce” out of paraphrase},
+  author={Wan, Stephen and Dras, Mark and Dale, Robert and Paris, C{\'e}cile},
+  booktitle={Proceedings of the Australasian Language Technology Workshop},
+  volume={2006},
+  year={2006}
+}
+```
 
 #### [A Semantic Similarity Approach to Paraphrase Detection](http://staffwww.dcs.shef.ac.uk/people/S.Fernando/pubs/clukPaper.pdf)
 
+<p align="justify">
+**Essence**: This work presents an algorithm for paraphrase identification which makes extensive use of word similarity information derived from WordNet. This work uses all word-to-word similarities in a pair of sentences. To compute word-to-word similarity, they considered six different similarity metric, namely [Leacock & Chodorow](http://www.aclweb.org/anthology/J98-1006.pdf) similarity, [Lesk](http://dl.acm.org/citation.cfm?id=318728) similarity, [Wu and Palmer](http://dl.acm.org/citation.cfm?id=981751) similarity, [Resnik](https://arxiv.org/abs/cmp-lg/9511007) similarity, [Lin](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.55.1832&rep=rep1&type=pdf) similarity and [Jiang & Conrath](https://arxiv.org/abs/cmp-lg/9709008) similarity.
+<p align="justify">
+
+**Expermental Dataset & Result**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus). Accuracy is 74.1% and F1 score is 82.4%. 
+
+**Bibliography**
+```
+@inproceedings{fernando2008semantic,
+  title={A semantic similarity approach to paraphrase detection},
+  author={Fernando, Samuel and Stevenson, Mark},
+  booktitle={Proceedings of the 11th Annual Research Colloquium of the UK Special Interest Group for Computational Linguistics},
+  pages={45--52},
+  year={2008},
+  organization={Citeseer}
+}
+```
 
 #### [Paraphrase recognition via dissimilarity significance classification](https://www.comp.nus.edu.sg/~kanmy/papers/paraphrase_emnlp2006.pdf)
 
+<p align="justify">
+**Essence**: 
+<p align="justify">
 
+**Expermental Dataset & Result**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus). Accuracy is 72.0% and F1 score is 81.6%. 
+
+**Bibliography**
+```
+@inproceedings{qiu2006paraphrase,
+  title={Paraphrase recognition via dissimilarity significance classification},
+  author={Qiu, Long and Kan, Min-Yen and Chua, Tat-Seng},
+  booktitle={Proceedings of the 2006 Conference on Empirical Methods in Natural Language Processing},
+  pages={18--26},
+  year={2006},
+  organization={Association for Computational Linguistics}
+}
+```

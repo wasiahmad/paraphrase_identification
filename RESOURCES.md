@@ -123,4 +123,12 @@ They have experimented from two perspectives, namely, similarity-based classific
 #### [Syntax-Aware Multi-Sense Word Embeddings for Deep Compositional Models of Meaning](http://www.aclweb.org/anthology/D/D15/D15-1177.pdf)
 
 
+#### [Using Dependency-Based Features to Take the “Para-farce” out of Paraphrase](http://www.alta.asn.au/events/altw2006/proceedings/swan-final.pdf)
+
+
+#### [A Semantic Similarity Approach to Paraphrase Detection](http://staffwww.dcs.shef.ac.uk/people/S.Fernando/pubs/clukPaper.pdf)
+
+
+#### [Paraphrase recognition via dissimilarity significance classification](https://www.comp.nus.edu.sg/~kanmy/papers/paraphrase_emnlp2006.pdf)
+
 

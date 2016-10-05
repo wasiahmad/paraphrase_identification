@@ -15,8 +15,9 @@
  - [Microsoft Research Paraphrase Corpus](http://research.microsoft.com/en-us/downloads/607d14d9-20cd-47e3-85bc-a2f65cd28042/): 750 pairs of sentences.
  - [Microsoft Research Video Description Corpus](http://research.microsoft.com/en-us/downloads/38cf15fd-b8df-477e-a4e4-a4680caa75af/): 750 pairs of sentences. 
  - [SMTeuroparl: WMT2008 develoment dataset (Europarl section)](http://www.statmt.org/wmt08/shared-evaluation-task.html): 734 pairs of sentences.
- The sentence pairs have been manually tagged with a number from 0 to 5, as defined below (cf. Gold Standard section).
 
 4. [Image Annotation](http://dl.acm.org/citation.cfm?id=1866717)
  - [Pascal Dataset](http://nlp.cs.illinois.edu/HockenmaierGroup/pascal-sentences/index.html): 1000 Images with 5 different sentences describing the corresponding image. 
  - [Flicker Dataset](http://nlp.cs.illinois.edu/HockenmaierGroup/8k-pictures.html): 7678 Images from Flicker with 5 different sentences describing the corresponding image.
+ 
+5. [PPDB: The Paraphrase Database](http://www.cis.upenn.edu/~ccb/ppdb/)

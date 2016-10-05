@@ -9,3 +9,6 @@
   <p align="justify">
   To generate the sentence-level PAN dataset, a heuristic alignment algorithm is used to find corresponding pairs of sentences within a passage pair linked by the plagiarism relationship. The alignment algorithm utilized only bag-of-words overlap and length ratios and no MT metrics. For negative evidence, sentences were sampled from the same document and extracted sentence pairs that have at least 4 content words in common. Then from both the positive and negative evidence files, training set of **10,000** sentence pairs and a test set of **3,000** sentence pairs were created through random sampling.
   <p align="justify">
+  
+  
+3. [MSRVID data](https://www.cs.york.ac.uk/semeval-2012/task6/data/uploads/datasets/) 

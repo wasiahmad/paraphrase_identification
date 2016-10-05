@@ -11,12 +11,28 @@
   <p align="justify">
   
   
-3. [MSRVID data](https://www.cs.york.ac.uk/semeval-2012/task6/data/uploads/datasets/)
+3. [MSRVID data](https://www.cs.york.ac.uk/semeval-2012/task6/data/uploads/datasets/) 
+  <p>
+    The dataset comprises pairs of sentences drawn from publicly
+    available datasets:
+    <ul>
+    <li> MSR-Paraphrase, Microsoft Research Paraphrase Corpus
+      http://research.microsoft.com/en-us/downloads/607d14d9-20cd-47e3-85bc-a2f65cd28042/ <br/>
+      750 pairs of sentences. </li>
 
+    <li> MSR-Video, Microsoft Research Video Description Corpus
+      http://research.microsoft.com/en-us/downloads/38cf15fd-b8df-477e-a4e4-a4680caa75af/ <br/>
+      750 pairs of sentences. </li>
+
+    <li> SMTeuroparl: WMT2008 develoment dataset (Europarl section)
+      http://www.statmt.org/wmt08/shared-evaluation-task.html <br/>
+      734 pairs of sentences. </li>
+    </ul>
+    The sentence pairs have been manually tagged with a number from 0 to
+    5, as defined below (cf. Gold Standard section).
+  </p>
 4. **Image Annotation** 
     <ul>
       <li> <a href = "http://nlp.cs.illinois.edu/HockenmaierGroup/pascal-sentences/index.html"> Pascal Dataset </a> </li>
       <li> <a href = "http://nlp.cs.illinois.edu/HockenmaierGroup/8k-pictures.html">Flicker Dataset </a> </li>
     </ul>
-
-5. [PPDB: The Paraphrase Database](http://www.cis.upenn.edu/~ccb/ppdb/)

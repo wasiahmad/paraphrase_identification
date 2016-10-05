@@ -1,16 +1,16 @@
 ## [Paraphrase Identification (State of the art)](https://aclweb.org/aclwiki/index.php?title=Paraphrase_Identification_(State_of_the_art))
 
 ### Summary of the state-of-art techniques
- - [Support Vector Machines for Paraphrase Identification and Corpus Construction](#support-vector-machines-for-paraphrase-identification-and-corpus-construction)
- - [Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection](#dynamic-pooling-and-unfolding-recursive-autoencoders-for-paraphrase-detection)
- - [Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks](#multi-perspective-sentence-similarity-modeling-with-convolutional-neural-networks)
- - [Corpus-based and Knowledge-based Measures of Text Semantic Similarity](#corpus-based-and-knowledge-based-measures-of-text-semantic-similarity)
- - [Re-examining Machine Translation Metrics for Paraphrase Identification](#re-examining-machine-translation-metrics-for-paraphrase-identification)
- - [Discriminative Improvements to Distributional Sentence Similarity](#discriminative-improvements-to-distributional-sentence-similarity)
- - [Syntax-Aware Multi-Sense Word Embeddings for Deep Compositional Models of Meaning](#syntax-aware-multi-sense-word-embeddings-for-deep-compositional-models-of-meaning)
- - [Using Dependency-Based Features to Take the “Para-farce” out of Paraphras](#using-dependency-based-features-to-take-the-para-farce-out-of-paraphras)
- - [A Semantic Similarity Approach to Paraphrase Detection](#a-semantic-similarity-approach-to-paraphrase-detection)
- - [Paraphrase recognition via dissimilarity significance classification](#paraphrase-recognition-via-dissimilarity-significance-classification)
+ 1. [Support Vector Machines for Paraphrase Identification and Corpus Construction](#support-vector-machines-for-paraphrase-identification-and-corpus-construction)
+ 2. [Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection](#dynamic-pooling-and-unfolding-recursive-autoencoders-for-paraphrase-detection)
+ 3. [Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks](#multi-perspective-sentence-similarity-modeling-with-convolutional-neural-networks)
+ 4. [Corpus-based and Knowledge-based Measures of Text Semantic Similarity](#corpus-based-and-knowledge-based-measures-of-text-semantic-similarity)
+ 5. [Re-examining Machine Translation Metrics for Paraphrase Identification](#re-examining-machine-translation-metrics-for-paraphrase-identification)
+ 6. [Discriminative Improvements to Distributional Sentence Similarity](#discriminative-improvements-to-distributional-sentence-similarity)
+ 7. [Syntax-Aware Multi-Sense Word Embeddings for Deep Compositional Models of Meaning](#syntax-aware-multi-sense-word-embeddings-for-deep-compositional-models-of-meaning)
+ 8. [Using Dependency-Based Features to Take the “Para-farce” out of Paraphrase](#using-dependency-based-features-to-take-the-para-farce-out-of-paraphrase)
+ 9. [A Semantic Similarity Approach to Paraphrase Detection](#a-semantic-similarity-approach-to-paraphrase-detection)
+ 10. [Paraphrase recognition via dissimilarity significance classification](#paraphrase-recognition-via-dissimilarity-significance-classification)
 
 #### [Support Vector Machines for Paraphrase Identification and Corpus Construction](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/I05-50015B15D.pdf)
 

@@ -1,6 +1,16 @@
 ## [Paraphrase Identification (State of the art)](https://aclweb.org/aclwiki/index.php?title=Paraphrase_Identification_(State_of_the_art))
 
 ### Summary of the state-of-art techniques
+ - [Support Vector Machines for Paraphrase Identification and Corpus Construction](#support-vector-machines-for-paraphrase-identification-and-corpus-construction)
+ - [Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection](#dynamic-pooling-and-unfolding-recursive-autoencoders-for-paraphrase-detection)
+ - [Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks](#multi-perspective-sentence-similarity-modeling-with-convolutional-neural-networks)
+ - [Corpus-based and Knowledge-based Measures of Text Semantic Similarity](#corpus-based-and-knowledge-based-measures-of-text-semantic-similarity)
+ - [Re-examining Machine Translation Metrics for Paraphrase Identification](#re-examining-machine-translation-metrics-for-paraphrase-identification)
+ - [Discriminative Improvements to Distributional Sentence Similarity](#discriminative-improvements-to-distributional-sentence-similarity)
+ - [Syntax-Aware Multi-Sense Word Embeddings for Deep Compositional Models of Meaning](#syntax-aware-multi-sense-word-embeddings-for-deep-compositional-models-of-meaning)
+ - [Using Dependency-Based Features to Take the “Para-farce” out of Paraphras](#using-dependency-based-features-to-take-the-para-farce-out-of-paraphras)
+ - [A Semantic Similarity Approach to Paraphrase Detection](#a-semantic-similarity-approach-to-paraphrase-detection)
+ - [Paraphrase recognition via dissimilarity significance classification](#paraphrase-recognition-via-dissimilarity-significance-classification)
 
 #### [Support Vector Machines for Paraphrase Identification and Corpus Construction](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/I05-50015B15D.pdf)
 
@@ -176,7 +186,7 @@ They have experimented from two perspectives, namely, similarity-based classific
 }
 ```
 
-#### [Paraphrase recognition via dissimilarity significance classification](https://www.comp.nus.edu.sg/~kanmy/papers/paraphrase_emnlp2006.pdf)
+#### [Paraphrase Recognition via Dissimilarity Significance Classification](https://www.comp.nus.edu.sg/~kanmy/papers/paraphrase_emnlp2006.pdf)
 
 <p align="justify">
 **Essence**: This work proposes a two-phase framework emphasizing dissimilarity classification between a pair of sentence. In the first phase, they pair up tuples (predicate, argument) in a **greedy** manner. In the second phase, a dissimilarity classification module uses the lexical head of the predicates and the tuples' path of attachment as features to decide whether such tuples are barriers to paraphrase. The key idea is, for a pair of sentences to be a paraphrase, they must possess two attributes. (1) They share a substantial amount of information nuggets and (2) if extra information in the sentences exists, the effect of its removal is not significant.

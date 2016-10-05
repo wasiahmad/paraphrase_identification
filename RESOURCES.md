@@ -1,93 +1,38 @@
 
-## [Paraphrase Identification (State of the art)](https://aclweb.org/aclwiki/index.php?title=Paraphrase_Identification_(State_of_the_art))
+## List of dataset used in state-of-art techniques
+1. [Microsoft Research Paraphrase Corpus](https://www.microsoft.com/en-us/download/details.aspx?id=52398). The training set contains **2753** true paraphrase pairs and **1323** false paraphrase pairs; the test set contains **1147** and **578** pairs, respectively.
+2. [Machine Translation Metrics Paraphrase Corpus](http://www.aclweb.org/anthology/N12-1019.pdf). The training set contains **5000** true paraphrase pairs and **5000** false paraphrase pairs; the test set contains **1500** and **1500** pairs, respectively.
+  
+  <p align="justify">
+  **Description**: The test collection from the [PAN 2010 plagiarism detection competition](http://pan.webis.de/clef10/pan10-web/plagiarism-detection.html) was used to generate the sentence-level PAN dataset. PAN 2010 dataset consists of **41,233** text documents from Project Gutenberg in which **94,202** cases of plagiarism have been inserted. The plagiarism was created either by using an algorithm or by explicitly asking Turkers to paraphrase passages from the original text. Only on the human created plagiarism instances were used here.
+  <p align="justify">
+  <p align="justify">
+  To generate the sentence-level PAN dataset, a heuristic alignment algorithm is used to find corresponding pairs of sentences within a passage pair linked by the plagiarism relationship. The alignment algorithm utilized only bag-of-words overlap and length ratios and no MT metrics. For negative evidence, sentences were sampled from the same document and extracted sentence pairs that have at least 4 content words in common. Then from both the positive and negative evidence files, training set of **10,000** sentence pairs and a test set of **3,000** sentence pairs were created through random sampling.
+  <p align="justify">
+  
+  
+3. [MSRVID data](https://www.cs.york.ac.uk/semeval-2012/task6/data/uploads/datasets/) 
+  <p>
+    The dataset comprises pairs of sentences drawn from publicly
+    available datasets:
+    <ul>
+    <li> MSR-Paraphrase, Microsoft Research Paraphrase Corpus
+      http://research.microsoft.com/en-us/downloads/607d14d9-20cd-47e3-85bc-a2f65cd28042/ <br/>
+      750 pairs of sentences. </li>
 
-### Summary of the state-of-art techniques
+    <li> MSR-Video, Microsoft Research Video Description Corpus
+      http://research.microsoft.com/en-us/downloads/38cf15fd-b8df-477e-a4e4-a4680caa75af/ <br/>
+      750 pairs of sentences. </li>
 
-#### [Support Vector Machines for Paraphrase Identification and Corpus Construction](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/I05-50015B15D.pdf)
-
-<p align="justify">
-**Essence**: This paper describes the extraction of parallel corpora from clustered news articles using annotated seed corpora and an SVM classifier, demonstrating that large parallel corpora can be induced by a classifier that includes morphological and synonymy features derived from both statis and dynamic resources.
-<p align="justify">
-<p align="justify">
-This work actually refines the output of the second heuristic proposed by [Dolan, et al. (2004)](http://www.aclweb.org/anthology/C04-1051.pdf) which assumes that the early sentences of a news article will tend to summarize the whole article and are thus likely to contain the same information as other early sentences of other articles in the cluster. This heuristic is a text-feature-based heuristic in which the first two sentences of each article in a cluster are cross-matched with each other to find out paraphrasing sentences.
-<p align="justify">
-<p align="justify">
-For SVM, they have used the implementation of the **Sequential Minimal Optimization (SMO)** algorithm described in [Platt (1999)](http://www.cs.utsa.edu/~bylander/cs6243/smo-book.pdf). SMO offers the benefit of relatively short training times over very large feature sets, and in particular, appears well suited to handling the sparse features encountered in natural language classification tasks.
-<p align="justify">
-
-**Expermental Dataset**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus).
-
-**Bibliography**
-```
-@inproceedings{brockett2005support,
-  title={Support vector machines for paraphrase identification and corpus construction},
-  author={Brockett, Chris and Dolan, William B},
-  booktitle={Proceedings of the 3rd International Workshop on Paraphrasing},
-  pages={1--8},
-  year={2005}
-}
-```
-
-#### [Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection](http://papers.nips.cc/paper/4204-dynamic-pooling-and-unfolding-recursive-autoencoders-for-paraphrase-detection.pdf)
-<p align="justify">
-**Essence**: This paper leveraged and extended the method described in Recursive Autoencoder describen in [Socher et. al (EMNLP.11)](http://dl.acm.org/citation.cfm?id=2145450). Prior feeding data to RAE, they build binary parse tree from test corpus. Recursive autoencoder is a recursive neural network, which recursively learns representation of words as well as other non terminals in the parse tree. They extended RAE as Unfolding RAE, which decodes the non-terminal down to the terminal level.
-<p align="justify">
-<p align="justify">
-They introduced dynamic pooling approach which generates fixed sized similarity matrix between words and non-terminals from variable sized matrix. They used the similarity matrix along with 3 additional features for classifying paraphrases. Those additional features are, The ﬁrst is 1 if two sentences contain exactly the same numbers or no number and 0 otherwise, the second is 1 if both sentences contain the same numbers and the third is 1 if the set of numbers in one sentence is a strict subset of the numbers in the other sentence. 
-<p align="justify">
-
-***Experimental Dataset & Result***: They used  [MSRP Dataset describe inD Dolan et. al.](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/para_coling2004.pdf) and their accuracy is 76.8% in terms of accuracy. 
-
-***More Details on this work: *** 
-
-[Blog Link](http://www.socher.org/index.php/Main/DynamicPoolingAndUnfoldingRecursiveAutoencodersForParaphraseDetection)
-
-[Code](https://github.com/jeremysalwen/ParaphraseAutoencoder-octave)
-
-**Bibliography**
-````
-@incollection{SocherEtAl2011:PoolRAE,
-title = {{Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection}},
-author = {{Richard Socher and Eric H. Huang and Jeffrey Pennington and Andrew Y. Ng and Christopher D. Manning}},
-booktitle = {{Advances in Neural Information Processing Systems 24}},
-year = {2011}
-}
-````
-
-
-
-
-#### [Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks](http://aclweb.org/anthology/D/D15/D15-1181.pdf)
-
-I am reading this paper and update with summary shortly. 
-
-#### [Corpus-based and Knowledge-based Measures of Text Semantic Similarity](http://www.aaai.org/Papers/AAAI/2006/AAAI06-123.pdf)
-
-**Essence**: This paper demonstrates 
-
-**Expermental Dataset**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus).
-
-**Bibliography**
-```
-@inproceedings{mihalcea2006corpus,
-  title={Corpus-based and knowledge-based measures of text semantic similarity},
-  author={Mihalcea, Rada and Corley, Courtney and Strapparava, Carlo},
-  booktitle={AAAI},
-  volume={6},
-  pages={775--780},
-  year={2006}
-}
-```
-
-#### [Re-examining Machine Translation Metrics for Paraphrase Identification](http://www.aclweb.org/anthology/N12-1019.pdf)
-
-
-
-#### [Discriminative Improvements to Distributional Sentence Similarity](http://www.aclweb.org/anthology/D/D13/D13-1090.pdf)
-
-
-
-#### [Syntax-Aware Multi-Sense Word Embeddings for Deep Compositional Models of Meaning](http://www.aclweb.org/anthology/D/D15/D15-1177.pdf)
-
-
-
+    <li> SMTeuroparl: WMT2008 develoment dataset (Europarl section)
+      http://www.statmt.org/wmt08/shared-evaluation-task.html <br/>
+      734 pairs of sentences. </li>
+    </ul>
+    The sentence pairs have been manually tagged with a number from 0 to
+    5, as defined below (cf. Gold Standard section).
+  </p>
+4. **Image Annotation** 
+    <ul>
+      <li> <a href = "http://nlp.cs.illinois.edu/HockenmaierGroup/pascal-sentences/index.html"> Pascal Dataset </a> </li>
+      <li> <a href = "http://nlp.cs.illinois.edu/HockenmaierGroup/8k-pictures.html">Flicker Dataset </a> </li>
+    </ul>

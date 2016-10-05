@@ -66,7 +66,7 @@ They introduced dynamic pooling approach which generates fixed sized similarity 
 **Essence**: In this work, they claim that their algorithm will do better with low amount of data, as it investigates intrinsic features in different granularity. But they did not provide any substantial proof. They used convolutional-neural-networks to obtain sentence embeddings. They used convolutional-neural-networks in multiple granularity. Every word in a sentence is represented as a word embedding vector. They used convolution on both whole word embedding and every dimension of the embedding. Based on that, they grouped convolutions into 2 groups.
 <p align="justify">
 <p align="justify">
-GroupA for whole word embedding and GroupB for per-dimension convolution. They used 3 types of pooling function (i.e. Max, Min. Mean) for group1 and 2 types(Max, Min) for GroupB. Although, they used identical convolutionNN  for eath of the pooling, but they maintained different NN instead. They also incorporated multiple window sizes for different filters including W_s(window size) to be infinite (which, infact, considers the whole sentence). On top of the pooling layer, they have a similarity measurement layer which uses a specific similarity measurement of 2 sentence representation and passes it to a fully connected softmax layer. 
+GroupA for whole word embedding and GroupB for per-dimension convolution. They used 3 types of pooling function (i.e. Max, Min. Mean) for group1 and 2 types (Max, Min) for GroupB. Although, they used identical convolutionNN for each of the pooling, but they maintained different NN instead. They also incorporated multiple window sizes for different filters including W_s(window size) to be infinite (which, infact, considers the whole sentence). On top of the pooling layer, they have a similarity measurement layer which uses a specific similarity measurement of 2 sentence representation and passes it to a fully connected softmax layer. 
 <p align="justify">
 
 **Experimental Dataset & Result**: They used the following three datasets.
@@ -173,7 +173,10 @@ They have experimented from two perspectives, namely, similarity-based classific
 #### [Using Dependency-Based Features to Take the “Para-farce” out of Paraphrase](http://www.alta.asn.au/events/altw2006/proceedings/swan-final.pdf)
 
 <p align="justify">
-**Essence**: This work investigates whether features based on syntactic dependencies can aid in paraphrase identification. This work proposes a machine learning approach based on syntactic dependency information to filter out false paraphrases. This work explored **17** different features of **3** kinds, namely, **N-gram Overlap**, **Dependency Relation Overlap** and **Dependency Tree-Edit Distance**.
+**Essence**: This work investigates whether features based on syntactic dependencies can aid in paraphrase identification. This work proposes a machine learning approach based on syntactic dependency information to filter out false paraphrases. This work explored **17** different features of **4** kinds, namely, **N-gram Overlap**, **Dependency Relation Overlap**, **Dependency Tree-Edit Distance** and **Surface** features.
+<p align="justify">
+<p align="justify">
+For the **N-gram Overlap** features, they used precision, recall on unigrams, lemmatised unigrams, Bleu, lemmatised Bleu and fmeasure. For **Dependency Relation Overlap** features, they used precision, recall on dependency relation and lemmatised dependency relation. For **Dependency Tree-Edit Distance** features, they used an ordered tree-edit distance algorithm based on dynamic programming. For **Surface** features, they used the difference in length of two sentences.
 <p align="justify">
 
 **Expermental Dataset & Result**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus). Accuracy is 75.6% and F1 score is 83%. 

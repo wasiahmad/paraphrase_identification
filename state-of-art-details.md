@@ -70,15 +70,9 @@ GroupA for whole word embedding and GroupB for per-dimension convolution. They u
 <p align="justify">
 
 **Experimental Dataset & Result**: They used the following three datasets.
- 1. [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus)
- 2. SICK dataset(9927 pair with a score from [1,5] denoting the relatdness)
- 3. [MSRVID](https://www.cs.york.ac.uk/semeval-2012/task6/data/uploads/datasets/)
-
-**Result:**
-
-* MSRP -> Accuracy 78.60%, F1 score 84.73%
-* SICK -> Recall 86.86%, Precision 80.47%, Mean Squared Error 26.06% 
-* MSRVID -> Recall 90.90%
+ 1. [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus): Accuracy 78.60%, F1 score 84.73%
+ 2. [SICK dataset](http://clic.cimec.unitn.it/composes/sick.html): Recall 86.86%, Precision 80.47%, Mean Squared Error 26.06%
+ 3. [MSRVID](https://www.cs.york.ac.uk/semeval-2012/task6/data/uploads/datasets/): Recall 90.90%
 
 For MSRP, they used hinge loss function as trainning and for other 2, they used Regularized KL-divergence loss.
 

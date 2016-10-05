@@ -11,10 +11,12 @@
   <p align="justify">
   
   
-3. [MSRVID data](https://www.cs.york.ac.uk/semeval-2012/task6/data/uploads/datasets/) 
+3. [MSRVID data](https://www.cs.york.ac.uk/semeval-2012/task6/data/uploads/datasets/)
 
 4. **Image Annotation** 
     <ul>
       <li> <a href = "http://nlp.cs.illinois.edu/HockenmaierGroup/pascal-sentences/index.html"> Pascal Dataset </a> </li>
       <li> <a href = "http://nlp.cs.illinois.edu/HockenmaierGroup/8k-pictures.html">Flicker Dataset </a> </li>
     </ul>
+
+5. [PPDB: The Paraphrase Database](http://www.cis.upenn.edu/~ccb/ppdb/)

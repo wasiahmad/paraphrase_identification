@@ -1,4 +1,3 @@
-
 ## [Paraphrase Identification (State of the art)](https://aclweb.org/aclwiki/index.php?title=Paraphrase_Identification_(State_of_the_art))
 
 ### Summary of the state-of-art techniques
@@ -199,3 +198,4 @@ They key idea is, for a pair of sentences to be a paraphrase, they must possess 
   organization={Association for Computational Linguistics}
 }
 ```
+

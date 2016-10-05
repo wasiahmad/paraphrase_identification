@@ -63,10 +63,13 @@ They introduced dynamic pooling approach which generates fixed sized similarity 
 #### [Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks](http://aclweb.org/anthology/D/D15/D15-1181.pdf)
 
 <p align="justify">
-**Essence**: In this work, they claim that their algorithm will do better with low amount of data, as it investigates intrnsic featured in different granularity. But they did not provide any evidential proof.
+**Essence**: In this work, they claim that their algorithm will do better with low amount of data, as it investigates intrinsic features in different granularity. But they did not provide any substantial proof. They used convolutional-neural-networks to obtain sentence embeddings. They used convolutional-neural-networks in multiple granularity. Every word in a sentence is represented as a word embedding vector. They used convolution on both whole word embedding and every dimension of the embedding. Based on that, they grouped convolutions into 2 groups.
+<p align="justify">
+<p align="justify">
+GroupA for whole word embedding and GroupB for per-dimension convolution. They used 3 types of pooling function (i.e. Max, Min. Mean) for group1 and 2 types(Max, Min) for GroupB. Although, they used identical convolutionNN  for eath of the pooling, but they maintained different NN instead. They also incorporated multiple window sizes for different filters including W_s(window size) to be infinite (which, infact, considers the whole sentence). On top of the pooling layer, they have a similarity measurement layer which uses a specific similarity measurement of 2 sentence representation and passes it to a fully connected softmax layer. 
+<p align="justify">
 
-They used convolutional-neural-networks to obtail sentence embeddings. They used convolutional-neural-networks in multiple granularity. Every word in a sentence is represented in a word embedding vector. They used convolution on both whole word embedding and every dimension of the embedding. Based on that, they grouped convolutions into 2 groups. GroupA for whole word embedding and GroupB for per-dimension convolution. They used 3 types of pooling function (i.e. Max, Min. Mean) for group1 and 2 types(Max, Min) for GroupB. Although, they used identical convolutionNN  for eath of the pooling, but they maintained different NN instead. They also incorporated multiple window sizes for different filters including W_s(window size) to be infinite (which, infact, considers the whole sentence). On top of the pooling layer, they have a similarity measurement layer which uses a specific similarity measurement of 2 sentence representation and passes it to a fully connected softmax layer. 
-
+**Experimental Dataset & Result**: They used the following three datasets.
 They used 3 datasets, i.e. *1. MSRP dataset (5801 pair labelled as binary, 1/0 paraphrase or not); 2. SICK dataset(9927 pair with a score from [1,5] denoting the relatdness); 3. MSRVID dataset (1500 pair with a score from [0,5] denoting the relatdness). 
 
 For MSRP, they used hinge loss function as trainning and for other 2, they used Regularized KL-divergence loss. 

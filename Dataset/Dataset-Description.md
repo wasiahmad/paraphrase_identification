@@ -15,6 +15,6 @@
 
 4. **Image Anootation** 
     <ul>
-      <li>a. [Pascal Dataset](http://nlp.cs.illinois.edu/HockenmaierGroup/pascal-sentences/index.html) </li>
-      <li>b. [Flicker Dataset](http://nlp.cs.illinois.edu/HockenmaierGroup/8k-pictures.html) </li>
+      <li> a. [Pascal Dataset](http://nlp.cs.illinois.edu/HockenmaierGroup/pascal-sentences/index.html) </li>
+      <li> b. [Flicker Dataset](http://nlp.cs.illinois.edu/HockenmaierGroup/8k-pictures.html) </li>
     </ul>

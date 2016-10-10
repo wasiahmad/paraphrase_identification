@@ -33,4 +33,6 @@
   <p align="justify">
 
 6. [PPDB: The Paraphrase Database](http://www.cis.upenn.edu/~ccb/ppdb/)
-
+  <p align="justify">
+  **Description**: The PPDB contains more than **220 million** paraphrase pairs of which **73 million** are phrasal paraphrases and **140 million** are paraphrase patterns that capture syntactic transformations of sentences.
+  <p align="justify">

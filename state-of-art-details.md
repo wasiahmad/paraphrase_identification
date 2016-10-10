@@ -155,10 +155,13 @@ They have experimented from two perspectives, namely, similarity-based classific
 #### [Syntax-Aware Multi-Sense Word Embeddings for Deep Compositional Models of Meaning](http://www.aclweb.org/anthology/D/D15/D15-1177.pdf)
 
 <p align="justify">
-**Essence**: 
+**Essence**: This work proposes an architecture for jointly training a compositional model and a set of word embeddings, in a way that imposes dynamic word sense induction for each word during the learning process. The learning takes places in the context of a RecNN (or an RNN), and both word embeddings and parameters of the compositional layer are optimized against a generic objective function that uses a hinge loss function. Novelty of their work is an additional layer on top of the compositional layer which scores the linguistic plausibility of the composed sentence or phrase vector with regard to both syntax and semantics.
+<p align="justify">
+<p align="justify">
+They extended their model to address lexical ambiguity by applying a gated architecture, similar to the one used in the multi-sense model of [Neelakantan et al.](https://arxiv.org/pdf/1504.06654.pdf), but advancing the main idea to the compositional setting. They have adopted [siamese architecture](https://papers.nips.cc/paper/769-signature-verification-using-a-siamese-time-delay-neural-network.pdf) for paraphrase detection. They have considered both L2 norm variation and cosine similarity to compare sentence vectors produced by RecNN or RNN. 
 <p align="justify">
 
-**Expermental Dataset & Result**:
+**Expermental Dataset & Result**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus), [PPDB: The Paraphrase Database](http://www.cis.upenn.edu/~ccb/ppdb/). Accuracy is 78.6% and F1 score is 85.3%.
 
 **Bibliography**
 ```

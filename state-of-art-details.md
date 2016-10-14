@@ -77,6 +77,8 @@ GroupA for whole word embedding and GroupB for per-dimension convolution. They u
 
 For MSRP, they used hinge loss function as trainning and for other 2, they used Regularized KL-divergence loss.
 
+**GitHub Repo**: [https://github.com/hohoCode/textSimilarityConvNet](https://github.com/hohoCode/textSimilarityConvNet)
+
 **Bibliography**
 ```
 @inproceedings{he2015multi,

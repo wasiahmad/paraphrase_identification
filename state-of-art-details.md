@@ -142,7 +142,9 @@ They explored eight most sophisticated MT metrics of the last few years that cla
 They have experimented from two perspectives, namely, similarity-based classification and supervised classification. For similarity-based classification, they have used TF-KLD weighting with SVD (Singular Value Decomposition) and NMF (Non-negative Matrix Factorization) and found that NMF is performing slightly better than SVD. For supervised classification, they have used Support Vector Machines. For all of the experiments, they have used two different distribution feature sets. First one included only unigrams while the second one also includes bigrams and unlabeled dependency pairs obtained from [MaltParser](http://stp.lingfil.uu.se/~nivre/docs/nivre_hall_2005.pdf).
 <p align="justify">
 
-**Expermental Dataset & Result**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus). Accuracy is 80.4% and F1 score is 85.9%. 
+**Expermental Dataset & Result**: [Microsoft Research Paraphrase Corpus](https://github.com/wasiahmad/Paraphrase-Identification-Task/tree/master/Dataset/MSRParaphraseCorpus). Accuracy is 80.4% and F1 score is 85.9%.
+
+**GitHub Repo**: [https://github.com/jiyfeng/tfkld](https://github.com/jiyfeng/tfkld)
 
 **Bibliography**
 ```

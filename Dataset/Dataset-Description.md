@@ -36,3 +36,23 @@
   <p align="justify">
   **Description**: The PPDB contains more than **220 million** paraphrase pairs of which **73 million** are phrasal paraphrases and **140 million** are paraphrase patterns that capture syntactic transformations of sentences.
   <p align="justify">
+  
+7. [WikiAnswers Paraphrase Corpus](http://knowitall.cs.washington.edu/oqa/data/wikianswers/)
+  <p align="justify">
+  **Description**: The WikiAnswers corpus contains clusters of questions tagged by WikiAnswers users as paraphrases. Each cluster optionally contains an answer provided by WikiAnswers users. There are 30,370,994 clusters containing an average of 25 questions per cluster. 3,386,256 (11%) of the clusters have an answer.
+  <p align="justify">
+
+  <p align="justify">
+  The data can be downloaded from: http://knowitall.cs.washington.edu/oqa/data/wikianswers/. The corpus is split into 40 gzip-compressed files. The total compressed filesize is 8GB; the total decompressed filesize is 40GB. Each file contains one cluster per line. Each cluster is a tab-separated list of questions and answers. Questions are prefixed by q: and answers are prefixed by a:. Here is an example cluster (tabs replaced with newlines):
+  <p align="justify">
+
+  ```
+  q:How many muslims make up indias 1 billion population?
+  q:How many of india's population are muslim?
+  q:How many populations of muslims in india?
+  q:What is population of muslims in india?
+  a:Over 160 million Muslims per Pew Forum Study as of October 2009.
+  ```
+
+  **Reference**: [https://github.com/afader/oqa#wikianswers-corpus](https://github.com/afader/oqa#wikianswers-corpus)<br/>
+  **Related Corpus**: [Paralex: Paraphrase-Driven Learning for Open Question Answering](http://knowitall.cs.washington.edu/paralex/)

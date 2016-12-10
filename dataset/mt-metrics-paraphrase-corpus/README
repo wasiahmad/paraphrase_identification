@@ -1,0 +1,19 @@
+This zip file contains the following files:
+
+1) pan-train_s1.txt: The PAN training set file containing the first sentences from each pair
+2) pan-train_s2.txt: The PAN training set file containing the second sentences from each pair
+3) pan-train.labels: A file containing the labels for each pair in the training set (0: non-paraphrase, 1: paraphrase). These labels are assigned by humans.
+
+4) pan-test_s1.txt: The PAN test set file containing the first sentences from each pair
+5) pan-test_s2.txt: The PAN test set file containing the second sentences from each pair
+6) pan-test.labels: A file containing the labels for each pair in the test set (0: non-paraphrase, 1: paraphrase). These labels are inferred by our heuristic algorithm that extracts sentence pairs from Turker plagiarized passages. 
+
+7) msrp-annotations.csv: A CSV file containing two annotations for a sample of 100 pairs from MSRP that the MT metrics classifier never got correct. This file contains the following fields: 
+ - id: a unique id
+ - sent1: the first sentence
+ - sent2: the second sentence
+ - label: the label (0: non-paraphrase, 1:paraphrase)
+ - annotation1: the first annotator's thoughts about why the MT metric approach could not get this or if the original label is wrong.
+ - annotation2: the second annotator's thoughts about why the MT metric approach could not get this or if the original label is wrong.
+
+8) pan-annotations.csv: A CSV file containing two annotations for a sample of 100 pairs from PAN that the MT metrics classifier never got correct. Contains the same field as the above file.

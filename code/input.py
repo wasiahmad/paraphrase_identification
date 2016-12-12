@@ -142,11 +142,11 @@ def get_train_data(vocabulary_size):
     for sentence in sent2_train_tokenized:
         sent2_train_indices.append([word_to_index[word] for word in sentence])
 
-    return sent1_train_indices, sent2_train_indices, word_to_index, index_to_word
+    return sent1_train_indices, sent2_train_indices, word_to_index, index_to_word, label_train
 
 
 def get_train_data_reversed(vocabulary_size):
-    sent1_train_indices, sent2_train_indices, word_to_index, index_to_word = get_train_data(vocabulary_size)
+    sent1_train_indices, sent2_train_indices, word_to_index, index_to_word, label_train = get_train_data(vocabulary_size)
 
     sent1_train_indices_reversed = []
     for index_list in sent1_train_indices:
@@ -162,7 +162,7 @@ def get_train_data_reversed(vocabulary_size):
         temp.reverse()
         sent2_train_indices_reversed.append(temp)
 
-    return sent1_train_indices_reversed, sent2_train_indices_reversed, word_to_index, index_to_word
+    return sent1_train_indices_reversed, sent2_train_indices_reversed, word_to_index, index_to_word, label_train
 
 
 def get_train_sentences(vocabulary_size):
@@ -210,11 +210,11 @@ def get_test_data(vocabulary_size):
     for sentence in sent2_test_tokenized:
         sent2_test_indices.append([word_to_index[word] for word in sentence])
 
-    return sent1_test_indices, sent2_test_indices, word_to_index, index_to_word
+    return sent1_test_indices, sent2_test_indices, word_to_index, index_to_word, label_test
 
 
 def get_test_data_reversed(vocabulary_size):
-    sent1_test_indices, sent2_test_indices, word_to_index, index_to_word = get_test_data(vocabulary_size)
+    sent1_test_indices, sent2_test_indices, word_to_index, index_to_word, label_test = get_test_data(vocabulary_size)
 
     sent1_test_indices_reversed = []
     for index_list in sent1_test_indices:
@@ -230,7 +230,7 @@ def get_test_data_reversed(vocabulary_size):
         temp.reverse()
         sent2_test_indices_reversed.append(temp)
 
-    return sent1_test_indices_reversed, sent2_test_indices_reversed, word_to_index, index_to_word
+    return sent1_test_indices_reversed, sent2_test_indices_reversed, word_to_index, index_to_word, label_test
 
 
 def get_test_sentences(vocabulary_size):

@@ -145,7 +145,7 @@ def test_on_forward_LSTM(model, classifier=MLPClassifier()):
 
     # '''Building the Fully connected layer'''
     build_classifier_and_test(
-        feature_vector_train, label_train, feature_vector_test, label_test, classifier, print_train_result=True)
+        feature_vector_train, label_train, feature_vector_test, label_test, classifier, print_train_result=False)
 
 def test_on_bidirectional_lstm(forward_model, backward_model, classifier=MLPClassifier()):
     # '''Generate Sentence embedding with forward model'''
@@ -189,7 +189,7 @@ def test_on_bidirectional_lstm(forward_model, backward_model, classifier=MLPClas
         backward_model, sent2_test_indices, word_to_index, index_to_word)
 
     # '''combine first sentence test embedding (forward and backward)'''
-    first_test_sentences_combined = combine_forward_and_backward_vectors(first_test_sentences, first_train_sentences_r)
+    first_test_sentences_combined = combine_forward_and_backward_vectors(first_test_sentences, first_test_sentences_r)
 
     # '''combine second sentence test embedding (forward and backward)'''
     second_test_sentences_combined = combine_forward_and_backward_vectors(second_test_sentences,
@@ -203,36 +203,36 @@ def test_on_bidirectional_lstm(forward_model, backward_model, classifier=MLPClas
     # '''Building the Fully connected layer'''
     build_classifier_and_test(
         feature_vector_train, label_train, feature_vector_test, label_test, classifier,
-        print_train_result=True)
+        print_train_result=False)
 
 
 '''Pooling Criteria'''
 POOLING_CRITERION = 'max'
-
+print("Multi Layer Perceptron")
 """###########################################Test Single Layer LSTM############################################"""
 # print("Single layer LSTM")
 # model = load_model_parameters_theano('./models/forward_single_layer_lstm-2016-12-05-13-04-14000-48-64.dat.npz', LSTM)
-# test_on_forward_LSTM(model)
+# test_on_forward_LSTM(model, classifier=LogisticRegression())
 
 """##############################################Test 2-Layer LSTM##############################################"""
-print("2 layer LSTM")
-model = load_model_parameters_theano('./models/forward_double_layer_lstm-2016-12-09-19-34-14000-48-64.dat.npz', DLSTM)
-test_on_forward_LSTM(model)
+# print("2 layer LSTM")
+# model = load_model_parameters_theano('./models/forward_double_layer_lstm-2016-12-09-19-34-14000-48-64.dat.npz', DLSTM)
+# test_on_forward_LSTM(model, classifier=LogisticRegression())
 
 """###########################################Test Single Layer BLSTM###########################################"""
-# print("1 layer BLSTM")
-# #'''Load Forward Model'''
-# forward_model = load_model_parameters_theano('./models/forward_single_layer_lstm-2016-12-05-13-04-14000-48-64.dat.npz', LSTM)
-# #'''Load backward model'''
-# backward_model = load_model_parameters_theano(
-#     './models/backward_single_layer_lstm-2016-11-30-21-07-14000-48-64.dat.npz', LSTM)
-# test_on_bidirectional_lstm(forward_model, backward_model)
+print("1 layer BLSTM")
+#'''Load Forward Model'''
+forward_model = load_model_parameters_theano('./models/forward_single_layer_lstm-2016-12-05-13-04-14000-48-64.dat.npz', LSTM)
+#'''Load backward model'''
+backward_model = load_model_parameters_theano(
+    './models/backward_single_layer_lstm-2016-11-30-21-07-14000-48-64.dat.npz', LSTM)
+test_on_bidirectional_lstm(forward_model, backward_model, classifier=LogisticRegression())
 
 """#############################################Test 2-Layer BLSTM##############################################"""
-# print("2 Layer BLSTM")
-# #'''Load Forward Model'''
-# forward_model = load_model_parameters_theano('./models/forward_double_layer_lstm-2016-12-09-19-34-14000-48-64.dat.npz', DLSTM)
-# #'''Load backward model'''
-# backward_model = load_model_parameters_theano(
-#     './models/backward_double_layer_lstm-2016-12-09-19-49-14000-48-64.dat.npz', DLSTM)
-# test_on_bidirectional_lstm(forward_model, backward_model)
+print("2 Layer BLSTM")
+#'''Load Forward Model'''
+forward_model = load_model_parameters_theano('./models/forward_double_layer_lstm-2016-12-09-19-34-14000-48-64.dat.npz', DLSTM)
+#'''Load backward model'''
+backward_model = load_model_parameters_theano(
+    './models/backward_double_layer_lstm-2016-12-09-19-49-14000-48-64.dat.npz', DLSTM)
+test_on_bidirectional_lstm(forward_model, backward_model, classifier=LogisticRegression())

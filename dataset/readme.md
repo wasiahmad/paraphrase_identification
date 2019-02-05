@@ -27,8 +27,13 @@ In this dataset, each sentence pair has a relatedness score &isin; [0, 5], with 
  - [SMTeuroparl: WMT2008 develoment dataset (Europarl section)](http://www.statmt.org/wmt08/shared-evaluation-task.html): 734 pairs of sentences.
 
 #### [Image Annotation with Descriptive Sentences](http://dl.acm.org/citation.cfm?id=1866717)
- - [Pascal Dataset](http://nlp.cs.illinois.edu/HockenmaierGroup/pascal-sentences/index.html): 1000 Images with 5 different sentences describing the corresponding image. 
- - [Flicker Dataset](http://nlp.cs.illinois.edu/HockenmaierGroup/8k-pictures.html): 7678 Images from Flicker with 5 different sentences describing the corresponding image.
+ - [Pascal Dataset](http://nlp.cs.illinois.edu/HockenmaierGroup/pascal-sentences/index.html): 1000 images with 5 different sentences describing the corresponding image. 
+ - [Flicker8k](http://nlp.cs.illinois.edu/HockenmaierGroup/8k-pictures.html): 7678 images from Flicker with 5 different sentences describing the corresponding image.
+ - [Flicker30k](http://shannon.cs.illinois.edu/DenotationGraph/): An image caption corpus consisting of 158,915 crowd-sourced captions describing 31,783 images.
+ - [MSCOCO](http://cocodataset.org/#overview): 328,000 images with 5 different sentences describing the corresponding image.
+
+#### [Video Annotation with Descriptive Sentences]()
+ - [MSR-VTT Dataset](http://ms-multimedia-challenge.com/2017/challenge): Comprised of 10,000 videos with 20 sentences each describing the videos.
  
 #### [Sentences Involving Compositional Knowledge (SICK) dataset](http://clic.cimec.unitn.it/composes/sick.html)
 

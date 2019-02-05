@@ -1,5 +1,10 @@
 
 ## List of dataset used in state-of-art techniques
+#### [Quora Question Pairs](https://data.quora.com/First-Quora-Dataset-Release-Question-Pairs)
+<p align='justify'>
+Quora released a new dataset in January 2017. The dataset consists of over 400K potential duplicate question pairs.
+<p align='justify'>
+
 #### [Microsoft Research Paraphrase Corpus](https://www.microsoft.com/en-us/download/details.aspx?id=52398).
 
 <p align='justify'>

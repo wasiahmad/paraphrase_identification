@@ -4,6 +4,12 @@
 <p align='justify'>
 Quora released a new dataset in January 2017. The dataset consists of over 400K potential duplicate question pairs.
 <p align='justify'>
+ 
+#### [TwitterPPDB corpus](https://languagenet.github.io/)
+
+<p align='justify'>
+The initial corpus contains 51,524 human annotated sentence pairs: 42200 for training and 9324 for testing. Authors have released data collected over 1 year which consists of 2,869,657 candidate pairs. 
+<p align='justify'>
 
 #### [Microsoft Research Paraphrase Corpus](https://www.microsoft.com/en-us/download/details.aspx?id=52398).
 
